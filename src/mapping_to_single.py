@@ -19,7 +19,7 @@ def map_brightness_char(brightness_value:int) -> str:
         return character_ramp[6]
     elif(196 <= brightness_value < 220):
         return character_ramp[7]
-    elif(224 <= brightness_value < 240):
+    elif(220 <= brightness_value < 240):
         return character_ramp[8]
     else:
         return character_ramp[9]
