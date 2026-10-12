@@ -13,4 +13,6 @@ Here @ is dark value and space at end it brightest value
 ## Step 3
 - So far we got a character ramp now we need to map those characters to brightness level 
 - we did like this: we took intervals of 9 so starting was 0 to 28 which corresponds to ' ' we could've taken 10 but 9 is working fine might change it in future.
-- 
+## Step 4
+- Now we have to convert a row of pixels into row of character as the image contains multiple rows of pixels not just a single value
+- For that 
