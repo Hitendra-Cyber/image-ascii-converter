@@ -2,6 +2,10 @@ character_ramp = [' ', '.', ':', '-', '=', '+', '*', '#', '%', '@']
 
 
 def map_brightness_char(brightness_value):
+    if not isinstance(brightness_value, int):
+        raise Exception("Provided input is not integer")
+    if 0 > brightness_value or brightness_value > 255:
+        raise Exception("Index error. Index provided is out of range of 0-255")
     if( 0 <= brightness_value < 28):
         return character_ramp[0]
     elif( 28 <= brightness_value < 56):
@@ -23,4 +27,4 @@ def map_brightness_char(brightness_value):
     else:
         return character_ramp[9]
 
-print(map_brightness_char(int(input())))
+print(map_brightness_char(input()))
