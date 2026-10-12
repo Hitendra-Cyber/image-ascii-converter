@@ -4,9 +4,13 @@ This project basically takes as input an image and generate an ASCII art for it.
 Except making a repo and initializing it there are main things we need to do. For this project I'm only gonna use core programming and no external libraries or less external libs.
 ## Step 1 
 - complete ( making project structure and initializing a repo)
-## Step 2 - For this we have to understand a character ramp and design it first. 
+## Step 2 
+- For this we have to understand a character ramp and design it first. 
 - What is a char ramp? It is a list of characters that represent range of pixel levels. Like in image we have range of pixel from 0 to 255. But in ASCII we only have characters and so we need to make a list of what characters represent what. For that we generate a character ramp.
 - For our case i used the bare minimum:
 [@%#*+=-:. ]
 Here @ is dark value and space at end it brightest value
+## Step 3
+- So far we got a character ramp now we need to map those characters to brightness level 
+- we did like this: we took intervals of 9 so starting was 0 to 28 which corresponds to ' ' we could've taken 10 but 9 is working fine might change it in future.
 - 
