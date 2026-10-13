@@ -1,6 +1,12 @@
 P2
+# Sample grayscale image
 4 3
+
+
 255
+
+
 0 60 128 255
+# blah bluh haha
 255 128 60 0
-0 0 200 255
+0 0 200 25
